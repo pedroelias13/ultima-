@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador Molecular</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'toolbar.html' %}
+    
+    <!-- Contenedor para la visualización de moléculas -->
+    <div id="molecule-viewer" style="width: 100%; height: 500px; margin-bottom: 20px;"></div>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Scripts necesarios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{{ url_for('static', filename='molecule_viewer.js') }}"></script>
+
+
+</body>
+</html>

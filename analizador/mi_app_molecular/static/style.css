@@ -1,0 +1,22 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+.periodic-table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center; /* Centrar texto en la tabla */
+}

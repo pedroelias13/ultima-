@@ -1,0 +1,85 @@
+﻿<div class="container">
+    <h2 class="text-center">Tabla Periódica</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <tbody>
+                <tr>
+                    <td class="element" data-name="Hidrógeno" data-symbol="H" data-atomic-number="1">H</td>
+                    <td class="element" data-name="Helio" data-symbol="He" data-atomic-number="2">He</td>
+                    <td class="element" data-name="Litio" data-symbol="Li" data-atomic-number="3">Li</td>
+                    <td class="element" data-name="Berilio" data-symbol="Be" data-atomic-number="4">Be</td>
+                    <td class="element" data-name="Boro" data-symbol="B" data-atomic-number="5">B</td>
+                    <td class="element" data-name="Carbono" data-symbol="C" data-atomic-number="6">C</td>
+                    <td class="element" data-name="Nitrógeno" data-symbol="N" data-atomic-number="7">N</td>
+                    <td class="element" data-name="Oxígeno" data-symbol="O" data-atomic-number="8">O</td>
+                    <td class="element" data-name="Flúor" data-symbol="F" data-atomic-number="9">F</td>
+                    <td class="element" data-name="Neón" data-symbol="Ne" data-atomic-number="10">Ne</td>
+                </tr>
+                <tr>
+                    <td class='element' data-name='Sodio' data-symbol='Na' data-atomic-number='11'>Na</td>
+                    <td class='element' data-name='Magnesio' data-symbol='Mg' data-atomic-number='12'>Mg</td>
+                    <td colspan=""></td> <!-- Espacio vacío -->
+                    <td colspan=""></td> <!-- Espacio vacío -->
+                    <td class='element' data-name='Aluminio' data-symbol='Al' data-atomic-number='13'>Al</td>
+                    <td class='element' data-name='Silicio' data-symbol='Si' data-atomic-number='14'>Si</td>
+                    <td class='element' data-name='Fósforo' data-symbol='P' data-atomic-number='15'>P</td>
+                    <td class='element' data-name='Azufre' data-symbol='S' data-atomic-number='16'>S</td>
+                    <td class='element' data-name='Cloro' data-symbol='Cl' data-atomic-number='17'>Cl</td>
+                    <td class='element' data-name='Argón' data-symbol='Ar' data-atomic-number='18'>Ar</td>
+                </tr>
+                <!-- Continúa con todos los elementos -->
+                <!-- Aquí están algunos elementos más: -->
+                <!-- Fila de metales de transición -->
+                <tr>
+                    <th class='element' data-name='Escandio' data-symbol='Sc' data-atomic-number='21'>Sc</th>
+                    <th class='element' data-name='Titanio' data-symbol='Ti' data-atomic-number='22'>Ti</th>
+                    <th class='element' data-name='Vanadio' data-symbol='V' data-atomic-number='23'>V</th>
+                    <th class='element' data-name='Cromo' data-symbol='Cr' data-atomic-number='24'>Cr</th>
+                    <th class='element' data-name='Manganeso' data-symbol='Mn' data-atomic-number='25'>Mn</th>
+                    <th class='element' data-name='Hierro' data-symbol='Fe' data-atomic-number='26'>Fe</th>
+                    <th class='element' data-name='Cobalto' data-symbol='Co' data-atomic-number='27'>Co</th>
+                    <th class='element' data-name='Níquel' data-symbol='Ni' data-atomic-number='28'>Ni</th>
+                    <th class='element' data-name='Cobre' data-symbol='Cu' data-atomic-number='29'>Cu</th>
+                    <th class ' element ' ='data - name = ' Zinc '   = ' data - symbol='Zn ' ='data - atomic - number = ' 30 '>Zn </ td >
+                </tr>
+
+                <!-- Continúa hasta completar todos los elementos de la tabla periódica -->
+                <!-- Aquí están algunos elementos más: -->
+                <!-- Fila de lantánidos y actínidos -->
+                ...
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .element {
+        text-align: center;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+    }
+
+        .element:hover {
+            background-color: #d1e7dd; /* Color al pasar el mouse */
+        }
+
+    .table {
+        width: 100%;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+    // Funcionalidad para mostrar información del elemento
+    document.querySelectorAll('.element').forEach(item => {
+        item.addEventListener('click', event => {
+            const name = item.getAttribute('data-name');
+            const symbol = item.getAttribute('data-symbol');
+            const atomicNumber = item.getAttribute('data-atomic-number');
+
+            alert(`Nombre: ${name}\nSímbolo: ${symbol}\nNúmero Atómico: ${atomicNumber}`);
+        });
+    });
+</script>

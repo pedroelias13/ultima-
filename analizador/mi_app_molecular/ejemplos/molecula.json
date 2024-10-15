@@ -1,0 +1,12 @@
+{
+  "nombre": "Agua",
+  "formula": "H2O",
+  "masa_molecular": 18.01528,
+  "estructura": {
+      "atomos": [
+          {"elemento": "H", "cantidad": 2},
+          {"elemento": "O", "cantidad": 1}
+      ],
+      "tipo_enlace": "covalente"
+  }
+}

@@ -1,0 +1,18 @@
+﻿<div class="toolbar bg-light p-3 rounded">
+    <h1 class="text-center">Bienvenido al Analizador Molecular</h1>
+    <div class="text-center">
+        <button id="toggle-periodic-table" class="btn btn-primary mx-2">Ver Tabla Periódica</button>
+        <button id="reset-view" class="btn btn-secondary mx-2">Reiniciar Vista</button>
+    </div>
+    <div id="periodic-table" style="display: none;" class="mt-3">
+        {% include 'tabla_periodica.html' %}
+    </div>
+</div>
+
+<script>
+    // Mostrar/Ocultar la tabla periódica
+    document.getElementById("toggle-periodic-table").addEventListener("click", function () {
+        const table = document.getElementById("periodic-table");
+        table.style.display = table.style.display === "none" ? "block" : "none";
+    });
+</script>
